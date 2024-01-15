@@ -84,14 +84,14 @@ class ObjectPage:
                 )
         
     def table_task(self):
-        return ft.Row(scroll=True, controls=[ft.DataTable(col={"sm": 12, "md": 12, "xl": 6},
+        return ft.Container(col={"sm": 12, "md": 12, "xl": 6}, content= ft.Row(scroll=True, controls=[ft.DataTable(
             columns=[
                 ft.DataColumn(ft.Text("№")),
                 ft.DataColumn(ft.Text("Задача")),
                 ft.DataColumn(ft.Text("Дата начало")),
                 ft.DataColumn(ft.Text("Дата окончания")),
                 ft.DataColumn(ft.Text("Картинки")),
-                ft.DataColumn(ft.Text("Добавить карнитки"))
+                ft.DataColumn(ft.Text("Добавить"))
             ],
             rows=[
                 ft.DataRow(
@@ -125,7 +125,7 @@ class ObjectPage:
                     ],
                 ),
             ],
-        )])
+        )]))
 
    
         

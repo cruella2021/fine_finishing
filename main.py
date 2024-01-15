@@ -342,20 +342,20 @@ def main(page: ft.Page):
                         ]
                 ))
      
-            if page.route == "/test":
-                objects_page = ObjectsTest(page)
-                objects_page.get_content_page()
-                
-                page.views.append(
-                    ft.View(
-                        "/test",
-                        appbar = app_menu.appbar,
-                        drawer = app_menu.drawer,
-                        controls = [
-                            objects_page.body
-                        ]
-                    )
-                )
+            #if page.route == "/test":
+            #    objects_page = ObjectsTest(page)
+            #    objects_page.get_content_page()
+            #    
+            #    page.views.append(
+            #        ft.View(
+            #            "/test",
+            #            appbar = app_menu.appbar,
+            #            drawer = app_menu.drawer,
+            #            controls = [
+            #                objects_page.body
+            #            ]
+            #        )
+            #    )
         page.update()
 
     def view_pop(e):
