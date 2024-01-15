@@ -9,7 +9,7 @@ from Screen.stage_image import  ObjectStageImage
 from Screen.files import FilesPage
 from Screen.tasks import TasksPage
 
-DEFAULT_FLET_PORT  = 8787
+DEFAULT_PORT  = 8787
 
 class MenuApp:
     def __init__(self, page):
@@ -376,4 +376,4 @@ def main(page: ft.Page):
     
     
 if __name__ == "__main__":
-    ft.app(target=main, view=ft.WEB_BROWSER, port=DEFAULT_FLET_PORT, upload_dir="assets/uploads")
+    ft.app(target=main, view=ft.WEB_BROWSER, port=DEFAULT_PORT, upload_dir="assets/uploads")
