@@ -373,7 +373,7 @@ def main(page: ft.Page):
     page.go(page.route)
     
     page.on_resize = on_resize
-    
+
     
 if __name__ == "__main__":
     ft.app(target=main, view=ft.WEB_BROWSER, port=DEFAULT_PORT, upload_dir="assets/uploads")
